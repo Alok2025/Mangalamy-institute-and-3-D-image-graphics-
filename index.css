@@ -1,0 +1,312 @@
+ /* Reset default margins & padding */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+.logo {
+width: 100%;
+border: 1px solid black;
+
+}
+
+#container-1{
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 500px;
+    margin-top: -208px;
+}
+
+#contect {
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px;
+}
+
+h{
+    color: black;
+    font-family:  sans-serif;
+    font-size: large;
+}
+
+button{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(70deg, #005f73,  #f9f9f9);
+}
+
+ /* Navigation Bar */
+
+ /* Dropdown Container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #003366; /* Dark Blue */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+     display: none; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Items */
+.dropdown-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: left;
+    border: none; /* Remove circular border from main menu */
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.dropdown-menu li a:hover {
+    background: #ffcc00;
+    color: #003366;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+ .navbar {
+    background-color: #0056b3; 
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    padding: 15px;
+}
+
+
+.nav-menu {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 2px solid white; 
+    border-radius: 50px; 
+    transition: 0.3s;
+    cursor: pointer; 
+}
+
+
+.nav-menu li a:hover {
+    background: #003366;
+    color: #ffcc00;
+} 
+
+.container-2 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.img {
+    position: relative;
+    width: fit-content;
+    margin-left: 56.6%;
+    height: 100%;
+    background: url('bg.png') no-repeat center center/cover;
+}
+
+.img img {
+    height: 100%;
+    mix-blend-mode: hard-light;
+  
+}
+
+
+
+.intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56.6%; /* Adjust as needed */
+    height: 100%;
+    border: 1px solid black;
+    margin-top: 0; /* Ensures no top margin */
+    justify-items: center;
+    background: #005f73;
+}
+    
+
+.intro-collage {
+    width: 90%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 3%;
+    margin: 15% 10% 10% 10%;
+    background: #d47a46;
+    text-align: center;
+    padding: 5%;
+
+}
+
+h1 {
+    overflow: hidden; 
+    white-space: nowrap;
+    border-right: 2px solid white; /* Cursor effect */
+    font-size: 24px;
+    font-family: monospace;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Input Box  */
+
+.input-box {
+    width: 300px; /* Adjust width */
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px;
+    outline: none; /* Removes default focus outline */
+    background: #0aa6c5; 
+    
+    /* Inner shadow effect */
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-box:focus {
+    /* Darker red on focus */
+    box-shadow: inset 3px 3px 10px  #005f73; /* Stronger shadow on focus */
+}
+
+
+
+/* Button  */
+
+.button {
+    padding: 8px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to bottom, #ff4b4b, #c40000); /* Gradient for depth */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    /* 3D effect using box-shadow */
+    box-shadow: 0 5px #900000, 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #ff6666, #d00000);
+}
+
+.button:active {
+    transform: translateY(4px); /* Press effect */
+    box-shadow: 0 2px #900000, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* container-3 */
+
+.container-3{
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, black);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 18px;
+    height: 100%;
+    object-fit: cover;
+}
+
